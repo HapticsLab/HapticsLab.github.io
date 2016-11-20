@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Thesis Slides</title>
+
+		<link rel="stylesheet" href="../reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="../reveal.js/css/theme/black.css" id="theme">
+		<!-- <link rel="stylesheet" href="../reveal.js/css/theme/solarized.css"> -->
+		<link rel="stylesheet" href="custom.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Qualitative Classification of Known Online Handwritten Symbols Using CVNNs</h1>
+				</section>
+				<section><!--********************************************************-->
+					<section>
+						<h2>Introduction</h2>
+						<ul>
+							<li>What we have, i.e. the input data</li>
+							<li>What we need, i.e. qualitative feedback</li>
+							<li>What's the use, i.e. possible applications</li>
+						</ul>
+					</section>
+					<section>
+						<h3>The Input</h3>
+						<p>
+							<span class="fragment highlight-current-red" data-fragment-index="1">Known</span> online handwritten symbols.
+						</p>
+						<img class="fragment grow" data-fragment-index="1" src="images/haptic_symbol_stc_3.png" alt="symbol for tracing" height="200px"/>
+						<img src="images/sensable_phantom_omni.jpg" alt="device for trace capture" height="200px"/>
+						<img src="images/stc_3_neural_net_example.png" alt="x,y, and time plot of handwritten symbol" height="200px"/>
+					</section>
+					<section>
+						<h3>Qualitative Feedback</h3>
+						<ul>
+							<li>How well was a symbol replicated</li>
+							<li>Relative or absolute metric</li>
+							<li>Easily performed by trained professional</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Applications</h3>
+						<ul>
+							<li>Intelligent Decision Support System (IDSS)</li>
+							<li>Automated rehabilitation system</li>
+						</ul>
+					</section>
+				</section>
+				<section><!--********************************************************-->
+					<section>
+						<h2>Methodology</h2>
+					</section>
+					<section>
+						<h3></h3>
+					</section>
+					<section>
+						<h3></h3>
+					</section>
+				</section>
+				<section><!--********************************************************-->
+					<section>
+						<h2>Experimental Procedures</h2>
+						<ul>
+							<li>Implementation</li>
+							<li>Evaluation</li>
+							<li>Performance</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Neural Network Implementation</h3>
+						<ul>
+							<li>Two main modules: C-RBF Neural Network, and  Trace Data</li>
+							<li>Part of libharp</li>
+							<li>Core implementation in C++11</li>
+							<li>CLI and utilities in Python 3</li>
+							<li>Meta-build tool CMake</li>
+							<li>External libs: yaml-cpp, PyYAML, and matplotlib</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Neural Network Evaluation</h3>
+						<ul>
+							<li>Train</li>
+							<li>Test</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Neural Network Performance</h3>
+						<ul>
+
+						</ul>
+					</section>
+				</section>
+				<section><!--********************************************************-->
+					<section>
+						<h2>Results</h2>
+					</section>
+					<section>
+						<h3></h3>
+					</section>
+				</section>
+				<section><!--********************************************************-->
+					<section>
+						<h2>Suggestions</h2>
+					</section>
+				</section>
+				<section><!--********************************************************-->
+					<h2>Questions</h2>
+				</section>
+			</div>
+		</div>
+		<script src="../reveal.js/lib/js/head.min.js"></script>
+		<script src="../reveal.js/js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				math: {
+					mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+					config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+				},
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '../reveal.js/plugin/markdown/marked.js' },
+					// { src: '../reveal.js/plugin/markdown/markdown.js' },
+					{ src: '../reveal.js/plugin/notes/notes.js', async: true },
+					{ src: '../reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../reveal.js/plugin/math/math.js', async: true }
+				]//
+			});
+		</script>
+	</body>
+</html>
